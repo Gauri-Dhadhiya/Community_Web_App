@@ -1,0 +1,69 @@
+<div
+  class="container-fluid h-100 d-flex align-items-center justify-content-center"
+>
+  <div class="row">
+    <div class="left col-md-6 col-sm-12 col-xs-6 d-flex">
+      <div class="h-100 align-items-center justify-content-center text-white">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img
+          src="https://media.istockphoto.com/id/1449490038/photo/online-shopping-and-e-commerce-technology-concept-shopper-using-computer-laptop-to-input.jpg?s=2048x2048&w=is&k=20&c=3Pmwqsxiy2XTePmajfBQyz2KcnC27QtzaFxNmBD9al0="
+          width="250px"
+          height="150px"
+        /><br /><br />
+        <h4>The Community</h4>
+        <br />
+        Find Solution, Ask Questions, Share Ideas. Connect with user across the
+        world
+      </div>
+    </div>
+
+    <div class="right col-sm-6 col-xs-6 col-md-6 text-center">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <h2 class="text-white">Login</h2>
+
+        <div class="form-group">
+          <div class="input-group">
+            <input
+              type="email"
+              class="form-control"
+              formControlName="email"
+              placeholder="Email Address"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group">
+            <input
+              type="password"
+              class="form-control"
+              formControlName="password"
+              placeholder="Password"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button
+            type="submit"
+            [disabled]="Form"
+            class="btn btn-primary btn-lg"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+
+      <div class="text-center text-white">
+        <a
+          routerLink="/user/forgotPassword"
+          style="color: white; padding-right: 50px"
+          >Forgot Password</a
+        >
+        <a routerLink="/user/signup" style="color: white; padding-left: 15px"
+          >Create new account</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
